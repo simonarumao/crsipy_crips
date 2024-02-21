@@ -1,0 +1,21 @@
+<!-- report.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Report</title>
+</head>
+<body>
+    <h1>Product Report</h1>
+    <% if (product) { %>
+        <ul>
+            <li><strong>Name:</strong> <%= product.name %></li>
+            <li><strong>Description:</strong> <%= product.description %></li>
+            <!-- Add other fields as needed -->
+        </ul>
+    <% } else { %>
+        <p>Product not found</p>
+    <% } %>
+</body>
+</html>
